@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-group {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  width: 500px;
+  border: 3px solid white;
+  padding: 18px 32px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+
+}
+
+.balance-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-group {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.amount-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-transcation-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 52px;
+  font-weight: 600;
+  color: steelblue;
+  display: flex;
+  justify-content: center;
+}
+
+.balance-para {
+  color: slategrey;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.amount-para {
+  color: slategrey;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.amount {
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.second-para {
+  font-size: 32px;
+  color: darkslategrey;
+  margin-bottom: 8px;
+}
+
+.input {
+  font-family: "Montserrat", sans-serif;
+  height: 45px;
+  padding-left: .5rem;
+  box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+  border: 0;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: text;
+  z-index: 0;
+}
+
+.input::placeholder {
+  color: #bdbecb;
+}
+
+.input:hover {
+  box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2.5px #2f303d;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.show-data-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#show-data {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.upper-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-text {
+  font-weight: 800;
+  font-size: 22px;
+  color: grey;
+}
+
+.new-amount {
+  font-weight: 800;
+  font-size: 22px;
+  color: #2b2c37;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-group {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 400px;
+    padding: 16px 26px;
+  }
+  .heading {
+    font-size: 42px;
+  }
+  .second-para {
+    font-size: 28px;
+  }
+  .amount-para {
+    font-size: 26px;
+  }
+  .balance-para {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-group {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 340px;
+    padding: 16px 22px;
+  }
+  .heading {
+    font-size: 34px;
+  }
+  .balance-para, #show-balance-data {
+    font-size: 26px;
+  }
+  .amount-para, .amount {
+    font-size: 22px;
+  }
+  .second-para {
+    font-size: 24px;
+  }
+  .new-text, .new-amount {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .main-group {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    width: 275px;
+    padding: 14px 18px;
+  }
+  .heading {
+    font-size: 26px;
+  }
+  .balance-para, #show-balance-data {
+    font-size: 22px;
+  }
+  .amount-para, .amount {
+    font-size: 20px;
+  }
+  .second-para {
+    font-size: 22px;
+  }
+  .new-text, .new-amount {
+    font-size: 18px;
+  }
+}
