@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="main-group">
+            <h1 class="heading">Expense Tracker</h1>
+            <div class="balance-group">
+                <h5 class="balance-para">Your Balance</h5>
+                <h2 id="show-balance-data">$0</h2>
+            </div>
+            <div class="show-group">
+                <div class="amount-group">
+                    <p class="amount-para">Income</p>
+                    <p class="amount" id="show-income-data">$0</p>
+                </div>
+                <div>|</div>
+                <div class="amount-group">
+                    <p class="amount-para">Expense</p>
+                    <p class="amount" id="show-expense-data">$0</p>
+                </div>
+            </div>
+            <div class="add-transcation-group">
+                <h1 class="second-para">Add new Transcation</h1>
+                <form id="form" class="form-group">
+                    <input class="input" type="text" name="input" id="get-name" placeholder="Enter your text">
+                    <input class="input" type="number" name="input" id="get-amount" placeholder="Enter your amount">
+                    <select class="input" name="choose" id="choose-chioce">
+                        <option value="choose">Choose one</option>
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                    <button type="submit" id="get-data">Add Transcation</button>
+                    <button type="reset">Clear</button>
+                </form>
+            </div>
+            <div class="show-data-group">
+                <h1 class="second-para">Transcation History</h1>
+                <div id="show-data"></div>
+            </div>
+        </div>
+    </main>
+    <script src="java.js"></script>
+</body>
+</html>
